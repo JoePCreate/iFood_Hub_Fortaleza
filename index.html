@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iFood HUB RioMar Fortaleza</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+</head>
+<body>
+
+  <header>
+    <h1>iFood HUB RioMar Fortaleza</h1>
+    <p>Filtre por andar e veja como chegar</p>
+    <img src="Ifood logo1.png" alt="Logo Ifood">
+    
+  </header>
+
+  <div class="filtro-container">
+    <label for="filtroAndar">Filtrar por andar: </label>
+    <select id="filtroAndar" onchange="filtrarAndar()">
+      <option value="todos">Todos</option>
+      <option value="térreo">Andar térreo</option>
+      <option value="L1">1º Andar</option>
+      <option value="L2">2º Andar</option>
+      <option value="L3">3º Andar</option>
+    </select>
+  </div>
+
+  <div class="container" id="listaRestaurantes">
+
+    <!-- Restaurante 1 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Giraffas</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="" alt="Giraffas">
+    </div>
+
+    <!-- Restaurante 2 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Spoletto</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/pizza-do-chef.jpg" alt="Spoletto">
+    </div>
+
+    <!-- Restaurante 3 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Gendai</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/sushi-garden.jpg" alt="Gendai">
+    </div>
+
+    <!-- Restaurante 4 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Divino Fogão</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Divino Fogão">
+    </div>
+
+    <!-- Restaurante 5 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>McDonalds</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="McDonalds">
+    </div>
+
+    <!-- Restaurante 6 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Bebelu</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Bebelu">
+    </div>
+
+    <!-- Restaurante 7 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Cheppitos</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Cheppitos">
+    </div>
+
+    <!-- Restaurante 8 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Sal e Brasa</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Sal e Brasa">
+    </div>
+
+    <!-- Restaurante 9 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Empório Brownie</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Empório Brownie">
+    </div>
+
+    <!-- Restaurante 10 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Irachai</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Irachai">
+    </div>
+
+    <!-- Restaurante 11 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>KFC</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="KFC">
+    </div>
+
+    <!-- Restaurante 12 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Natural Leve</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Natural Leve">
+    </div>
+
+    <!-- Restaurante 13 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Vivenda do Camarão</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Vivenda do Camarão">
+    </div>
+
+    <!-- Restaurante 14 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Burguer King</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Burguer King">
+    </div>
+
+    <!-- Restaurante 15 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Puro Açai</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Puro Açai">
+    </div>
+
+    <!-- Restaurante 16 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Dominos Pizza</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Dominos Pizza">
+    </div>
+
+    <!-- Restaurante 17-->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Take a Juice</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Take a Juice">
+    </div>
+
+    <!-- Restaurante 18 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Mahalo Poke</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Mahalo Poke">
+    </div>
+
+    <!-- Restaurante 19 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Vignoli Cucina</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Vignoli Cucina">
+    </div>
+
+    <!-- Restaurante 20 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Saladex</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Saladex">
+    </div>
+
+    <!-- Restaurante 21 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Australia Buffet</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Australia Buffet">
+    </div>
+
+    <!-- Restaurante 22 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Tasquinha do Tio</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Tasquinha do Tio">
+    </div>
+
+    <!-- Restaurante 23 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Madero</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Madero">
+    </div>
+
+    <!-- Restaurante 24 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Giapone</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Giapone">
+    </div>
+
+    <!-- Restaurante 25 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Pulcinella</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Pulcinella">
+    </div>
+
+    <!-- Restaurante 26 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Cowboy</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Cowboy">
+    </div>
+
+    <!-- Restaurante 27 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Pizza Hut</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Pizza Hut">
+    </div>
+
+    <!-- Restaurante 28 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Yozenn</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Yozenn">
+    </div>
+
+    <!-- Restaurante 29 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Mini Kalzone</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Mini Kalzone">
+    </div>
+
+    <!-- Restaurante 30-->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Iangchao</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Iangchao">
+    </div>
+
+    <!-- Restaurante 31-->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Companhia do Churrasco</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Companhia do Churrasco">
+    </div>
+
+    <!-- Restaurante 32 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Noelia</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Noelia">
+    </div>
+
+    <!-- Restaurante 33 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Turatti</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Turatti">
+    </div>
+
+    <!-- Restaurante 34 -->
+    <div class="card" data-andar="L3">
+      <div class="info">
+        <h2>Jeronimo Burguer</h2>
+        <p class="andar">3º Andar - Praça de Alimentação</p>
+        <p class="rota">Localizado na praça de alimentação piso L3</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Jeronimo Burguer">
+    </div>
+
+    <!-- Restaurante 35 -->
+    <div class="card" data-andar="L2">
+      <div class="info">
+        <h2>Bacio di Latte</h2>
+        <p class="andar">2º Andar</p>
+        <p class="rota">Localizado no piso L2</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Bacio di Latte">
+    </div>
+
+    <!-- Restaurante 36 -->
+    <div class="card" data-andar="L2">
+      <div class="info">
+        <h2>Milky Moo</h2>
+        <p class="andar">2º Andar</p>
+        <p class="rota">Localizado no piso L2</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Milky Moo">
+    </div>
+
+    <!-- Restaurante 37 -->
+    <div class="card" data-andar="L1">
+      <div class="info">
+        <h2>Casa Bauducco</h2>
+        <p class="andar">1º Andar</p>
+        <p class="rota">Localizado no piso L1</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Casa Bauducco">
+    </div>
+
+    <!-- Restaurante 38 -->
+    <div class="card" data-andar="L1">
+      <div class="info">
+        <h2>OutBack</h2>
+        <p class="andar">1º Andar</p>
+        <p class="rota">Localizado no piso L1</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Outback">
+    </div>
+
+    <!-- Restaurante 39 -->
+    <div class="card" data-andar="L1">
+      <div class="info">
+        <h2>Tio Armênio</h2>
+        <p class="andar">1º Andar</p>
+        <p class="rota">Localizado no piso L1</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Tio Armênio">
+    </div>
+
+    <!-- Restaurante 40 -->
+    <div class="card" data-andar="L1">
+      <div class="info">
+        <h2>Soho</h2>
+        <p class="andar">1º Andar</p>
+        <p class="rota">Localizado no piso L1</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Soho">
+    </div>
+
+    <!-- Restaurante 41 -->
+    <div class="card" data-andar="térreo">
+      <div class="info">
+        <h2>Camarada Camarão</h2>
+        <p class="andar">térreo</p>
+        <p class="rota">Localizado na entrada tal piso térreo</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Camarada Camarão">
+    </div>
+
+    <!-- Restaurante 42 -->
+    <div class="card" data-andar="térreo">
+      <div class="info">
+        <h2>Paris Bistrô</h2>
+        <p class="andar">térreo</p>
+        <p class="rota">Localizado na entrada tal piso térreo</p>
+      </div>
+      <img class="foto" src="imagens/churrasco-cia.jpg" alt="Paris Bistrô">
+    </div>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
